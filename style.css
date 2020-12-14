@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+/*border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bg {
+    background: url('https://images.unsplash.com/photo-1607543551362-9c1e4f4ac287?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
+    position: absolute;
+    top: -30;
+    left: -30;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px)
+}
+
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+}
